@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎱 행운의 로또 추첨</title>
   <meta name="description" content="행운의 로또 번호를 자동 생성해보세요!" />
+  <!-- Google AdSense: 아래 ca-pub-XXXXXXXXXXXXXXXX는 실제 퍼블리셔 ID로 교체하세요 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --bg-1: #0f0c29; --bg-2: #302b63; --bg-3: #24243e; --gold: #ffd700; --text: #fff; }
@@ -55,12 +57,24 @@
     .progress-bar.active { display:block; }
     .progress-fill { height:100%; background:linear-gradient(90deg,#ff8c00,#ffd700); width:0%; transition:width 0.3s; }
     footer { margin-top:40px; color:#888; font-size:0.85rem; text-align:center; }
+    .ad-container { width:100%; max-width:600px; margin:20px 0; text-align:center; }
+    .ad-label { font-size:0.7rem; color:#666; letter-spacing:1px; margin-bottom:4px; }
     @media (max-width:480px) { .ball { width:42px; height:42px; font-size:1.1rem; } .history-item .ball { width:32px; height:32px; font-size:0.8rem; } .set-label { min-width:35px; font-size:0.8rem; } }
   </style>
 </head>
 <body>
   <h1>🎱 행운의 로또 추첨</h1>
   <p class="subtitle">1~45 중 6개 번호 + 보너스 번호를 뽑아보세요!</p>
+  <!-- Google AdSense: 상단 반응형 광고 -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;height:90px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
   <div class="machine">
     <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
     <div class="sets-container" id="setsContainer"><div style="color:#888; text-align:center; padding:20px;">버튼을 눌러 번호를 생성하세요 ✨</div></div>
@@ -79,6 +93,16 @@
   <div class="history">
     <h2>📜 추첨 기록 <button class="clear-btn" id="clearBtn">기록 삭제</button></h2>
     <div class="history-list" id="historyList"><div class="empty-history">아직 기록이 없습니다.</div></div>
+  </div>
+  <!-- Google AdSense: 하단 반응형 광고 -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0987654321"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
   <footer><p>🍀 이 사이트는 재미를 위한 것이며, 당첨을 보장하지 않습니다.</p><p>Powered by Cloudflare Pages</p></footer>
   <script>
